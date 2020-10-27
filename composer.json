@@ -1,0 +1,31 @@
+{
+    "name": "timur-flush/queue",
+    "description": "Queue package for Phalcon framework",
+    "type": "library",
+    "license": "New BSD 3-Clause License",
+    "require": {
+        "symfony/process": "^5",
+        "nesbot/carbon": "^2",
+        "ext-psr": "*",
+        "ext-pcntl": "*",
+        "ext-posix": "*"
+    },
+    "require-dev": {
+        "phalcon/ide-stubs": ">=4.0 <5.0",
+        "pda/pheanstalk": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TimurFlush\\Queue\\": "src/"
+        }
+    },
+    "autoload-dev": {
+
+    },
+    "suggest": {
+        "pda/pheanstalk": "Support for Beanstalk Queue Server. (^4.0.0)"
+    },
+    "provide": {
+        "psr/log": "^1"
+    }
+}
